@@ -1,0 +1,208 @@
+.border{
+	border:solid 1.4px red;
+}
+.borderg{
+	border: solid 1.4px green;
+}
+body{
+}
+
+.active{
+	color: red !important;
+}
+nav li{
+	padding-top: 5px;
+}
+.red{
+	color: red;
+}
+#register{
+	text-align: center;
+	background-color: rgb(237, 224, 6);
+	margin-top: 3rem;
+	padding: 1rem;
+	min-height: 100vh;
+}
+.regboxwrap{
+	margin-top: 6rem;
+}
+#register .posabs1{
+	position: absolute;
+	top: 55px;
+	left: 10px;
+	display: inline-block;
+}
+#register .posabs2{
+	position: absolute;
+	top: 50px;
+	right: 10px;
+	display: inline-block;
+}
+.regcol{
+	background-color: #fefefe;
+	box-shadow: solid 40px black;
+	height: 230px;
+	padding: 1rem;
+	position: relative;
+
+}
+.cabshareh1{
+	color: white;
+	text-decoration: underline;
+	font-size: 3rem;
+}
+.cabshareh2{
+	color: #fafafa;
+	font-size: 2.5rem;
+	
+}
+.regcol p{
+	padding: 1rem;
+}
+.regcol button{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.regcolwrap{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	-webkit-box-shadow: 0px 0px 37px -2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 37px -2px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 37px -2px rgba(0,0,0,0.75);
+}
+
+#aboutus{
+	text-align: center;
+	background-color: orange;
+	color: white;
+	padding: 2rem;
+	font-size: 2rem;
+}
+.aboutusshare{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#aboutus p{
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+.howwork h2{
+	text-decoration: underline;
+}
+.howwork{
+	background-color: rgba(0, 0, 0, 0);
+	
+	padding: 3rem;
+
+}
+#contactus{
+	
+	background-color:#0e0e6a;
+	color: #fff;
+	min-height: 50vh;
+	text-align: center;
+}
+#contactus h1{
+	font-size: 3rem;
+	text-decoration: underline;
+}
+#contactus p,#contactus .contactusdiv1{
+	font-size: 2rem;
+}
+.contactusdiv1 i{
+	vertical-align: middle;
+	transition:all 0.5s ease;
+}
+.contactusdiv1 i:hover{
+	color: rgb(237, 224, 6);
+}
+#contactus textarea{
+	padding-bottom: 5rem;
+}
+#contactus input[type="submit"]{
+	padding: 1rem 4rem;
+}
+hr{
+	border: 2px solid #000;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+footer{
+	padding-top: 2rem;
+	font-size: 1.7rem;
+	padding-bottom: 2rem;
+	position: relative;
+}
+@media (min-width: 769px){
+	#reg{
+		border-right: solid 2px rgba(0, 0, 0, 0.08);
+	}
+	.regcol{
+		height: 260px;
+	}
+	.cabshareh1{
+		font-size: 45px;
+	}
+	.cabshareh2{
+		font-size: 40px;
+	}
+	#contactus{
+		padding-left: 5rem;
+		padding-right: 20rem;
+		padding-top: 2rem;
+		padding-bottom: 3rem;
+	}
+	.aboutuscon{
+		padding-left: 5rem;
+		padding-right: 5rem;
+	}
+	#contactus form{
+		margin-left: 15rem;
+		margin-right: 15rem;
+		text-align: left;
+	}
+	footer .pullright{
+		position: absolute;
+		right: 100px;
+		top: 5px;
+	}
+}
+@media (max-width:768px){
+	#aboutus{
+		font-size: 1.8rem;
+	}
+	.howwork h2{
+		font-size: 2rem;
+	}
+	.howwork{
+		padding: 1rem;
+	}
+	#aboutus p{
+		padding-left: 0rem;
+		padding-right: 0rem;
+	}
+	#contactus i{
+		font-size: 3rem;
+	}
+	#reg{
+		margin-bottom: 10px;
+	}
+	.aboutusshare{
+		width:30%;
+		display: none;
+	}
+	footer .pullright{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+}
