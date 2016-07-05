@@ -14,7 +14,7 @@ $mail->Host = "smtp.gmail.com";
 $mail->SMTPAuth = true;                          
 //Provide username and password     
 $mail->Username = "vitcabshare@gmail.com";                 
-$mail->Password = "Aawrun#32";                           
+$mail->Password = "harshitkediavitcabshare01";                           
 //If SMTP requires TLS encryption then set it
 $mail->SMTPSecure = "tls";                           
 //Set TCP port to connect to 
