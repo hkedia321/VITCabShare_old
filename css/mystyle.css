@@ -202,4 +202,7 @@ footer{
 		margin-right: auto;
 		text-align: center;
 	}
+	#contactus form{
+		text-align: left;
+	}
 }
