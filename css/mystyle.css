@@ -18,7 +18,7 @@ nav li{
 }
 #register{
 	text-align: center;
-	background-color: rgb(237, 224, 6);
+	background-color: rgb(195, 185, 15);
 	margin-top: 3rem;
 	padding: 1rem;
 	min-height: 100vh;
@@ -82,26 +82,23 @@ nav li{
 	text-align: center;
 	background-color: orange;
 	color: white;
-	padding: 2rem;
+	padding: 0rem;
 	font-size: 2rem;
 }
-.aboutusshare{
-	margin-left: auto;
-	margin-right: auto;
-}
-
+@media (min-width:769px){
 #aboutus p{
 	padding-left: 2rem;
 	padding-right: 2rem;
+}
+#aboutus{
+	padding: 2rem;
+}
 }
 .howwork h2{
 	text-decoration: underline;
 }
 .howwork{
 	background-color: rgba(0, 0, 0, 0);
-	
-	padding: 3rem;
-
 }
 #contactus{
 	
