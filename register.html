@@ -8,7 +8,7 @@
 	<meta name="description" content="VIT Cab Share is an easy way to share your cab from Chennai or Bangaluru Airport to VIT Vellore. Built by VITians.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="images/fab.png">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/register.css">
 </head>
@@ -24,7 +24,7 @@
 			<div class="formdiv">
 				<h1 class="text-center">Register</h1>
 				<br>
-				<form action="register.php" method="POST" onsubmit="alert('Thank you for your response')">
+				<form action="register.php" method="POST">
 					<div class="form-group">
 						<div class="row">
 							<label class="col-md-2 control-label" for="name">Name:<span class="red">&nbsp;*</span></label>
@@ -37,7 +37,7 @@
 						<div class="row">
 							<label for="from" class="col-md-2 control-label">From:&nbsp;<span class="required">*</span></label>
 							<div class="col-md-4">
-								<select class="form-control" id="selectfrom" style="margin-bottom:15px;">
+								<select class="form-control" id="from" style="margin-bottom:15px;" name="from">
 									<option value="chennaiAirport">Chennai Airport</option>
 									<option value="bangaloreAirport">Bangalore Airport</option>
 									<option value="vitvellore">VIT Vellore</option>
@@ -45,7 +45,7 @@
 							</div>
 							<label for="to" class="col-md-2 control-label">To:&nbsp;<span class="required">*</span></label>
 							<div class="col-md-4">
-								<select class="form-control" id="selectto" style="margin-bottom:15px;">
+								<select class="form-control" name="to" id="to" style="margin-bottom:15px;">
 									<option value="chennaiAirport">Chennai Airport</option>
 									<option value="bangaloreAirport">Bangalore Airport</option>
 									<option value="vitvellore">VIT Vellore</option>
@@ -88,12 +88,12 @@
 	<footer>
 
 		<div id="footer" class="container">
-			<span class="pullright"><div class="fb-share-button" style="display:inline-block;" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"><button type="button" class="btn btn-primary">Share on fb&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i></button></a></div></span>
+			<span class="pullright"><div class="fb-share-button" style="display:inline-block;" data-href="https://www.facebook.com/vitcabshare/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fvitcabshare%2F&amp;src=sdkpreparse"><button type="button" class="btn btn-primary">Share on fb&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i></button></a></div></span>
 			<span class=""><span style="text-decoration:underline;"><a href="index.html">VIT Cab Share</a></span> - Cab Sharing made easy</span>
 			
 			<br>
 
-			<div class="opensource text-center" style="text-align:center;">This project is an open source initiative.<br> You can contribute and improve it.<br>see on <a href="">github</a></div>
+			<div class="opensource text-center" style="text-align:center;">This project is an open source initiative.<br> You can contribute and improve it.<br>see on <a href="https://github.com/hkedia321/VITCabShare" target="_blank">github</a></div>
 		</div>
 	</footer>
 </body>

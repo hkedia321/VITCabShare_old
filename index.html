@@ -5,14 +5,28 @@
 	<meta charset="UTF-8">
 	<meta name="keywords" content="VIT, Cab, Share, Sharing, Taxi, Vellore, Chennai, Airport, Bangaluru, Airport">
 	<meta name="description" content="VIT Cab Share is an easy way to share your cab from Chennai or Bangaluru Airport to VIT Vellore. Built by VITians.">
+	<meta name="author" content="Harshit Kedia, kediarocket@outlook.com">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="images/fab.png">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+	<meta property="og:url"           content="http://vitcabshare.azurewebsites.net/" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="VIT Cab Share" />
+	<meta property="og:description"   content="VIT Cab Share is an easy way to share your cab from Chennai or Bangaluru Airport to VIT Vellore. Built by VITians." />
+	<meta property="og:image"         content="images/fab.png" />
+
 </head>
 <body>
-	<div id="fb-root"></div>
+	<!--<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>-->
 	<div id="nav">
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container-fluid">
@@ -37,7 +51,9 @@
 	<div class="target" id="register">
 		<div class="container">
 			<h1 class="cabshareh1">VIT Cab Share<h1>
+				<!-- <div class="fb-like" data-href="https://www.facebook.com/vitcabshare/" data-width="100" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div> -->
 				<h2 class="cabshareh2">Cab Sharing Made Easy</h2>
+				
 				<div class="row">
 					<!--  -->
 					<!-- <img src="images/taxi.png" class="img-responsive posabs2 hidden-xs hidden-sm"> -->
@@ -131,16 +147,18 @@
 		<footer>
 
 			<div id="footer" class="container">
-				<span class="pullright"><div class="fb-share-button" style="display:inline-block;" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/vitcabshare/"><button type="button" class="btn btn-primary">Share on fb&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i></button></a></div></span>
-				<span class=""><span style="text-decoration:underline;"><a href="index.html">VIT Cab Share</a></span> - Cab Sharing made easy</span>
+				<span class="pullright">
+					<div class="fb-share-button" style="display:inline-block;" data-href="https://www.facebook.com/vitcabshare/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fvitcabshare%2F&amp;src=sdkpreparse"><button type="button" class="btn btn-primary">Share on fb&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i></button></a>
+					</div></span>
+					<span class=""><span style="text-decoration:underline;"><a href="index.html">VIT Cab Share</a></span> - Cab Sharing made easy</span>
 
-				<br>
+					<br>
 
-				<div class="opensource text-center" style="text-align:center;">This project is an open source initiative.<br> You can contribute and improve it.<br>see on <a href="">github</a></div>
-			</div>
-		</footer>
-		<script src="js/jquery.js"></script>
-		<script src="js/bootstrap.min.js"></script>	
-		<script src="js/myjs.js"></script>
-	</body>
-	</html>
+					<div class="opensource text-center" style="text-align:center;">This project is an open source initiative.<br> You can contribute and improve it.<br>see on <a href="https://github.com/hkedia321/VITCabShare" target="_blank">github</a></div>
+				</div>
+			</footer>
+			<script src="js/jquery.js"></script>
+			<script src="js/bootstrap.min.js"></script>	
+			<script src="js/myjs.js"></script>
+		</body>
+		</html>

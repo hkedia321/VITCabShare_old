@@ -27,11 +27,17 @@ $mail->addAddress("geek.harshitkedia@gmail.com", "Recepient Name");
 
 $mail->isHTML(true);
 
-$mail->Subject = "contact";
+
 $name = $_POST['name'];
+$from = $_POST['from'];
+$to = $_POST['to'];
+$date = $_POST['date'];
+$time = $_POST['time'];
 $email = $_POST['email'];
-$message = $_POST['message'];
-$mail->Body = "From: $name\n E-Mail: $email\n Message:\n $message";
+$phnno = $_POST['phnno'];
+$mail->Subject = "Register $name";
+
+$mail->Body = "$name \n $from \n $to \n $date \n $time \n $email \n $phnno \n";
 $mail->AltBody = "This is the plain text version of the email content";
 
 if(!$mail->send()) 
