@@ -75,11 +75,6 @@ else {
 		<link rel="stylesheet" type="text/css" href="css/register.css">
 		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.min.js"></script>	
-		<script type="text/javascript">
-		function redirect(){
-			window.location="http://www.google.com";
-		}
-		</script>
 	</head>
 	<body>
 		
@@ -149,7 +144,7 @@ else {
 						</div>
 						<br>
 
-						<a onclick="redirect()"><input type="submit" class="col-xs-12 col-md-2 btn btn-primary pull-right"></a>
+						<a><input type="submit" class="col-xs-12 col-md-2 btn btn-primary pull-right"></a>
 					</form>
 				</div>
 			</div>

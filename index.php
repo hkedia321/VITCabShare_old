@@ -161,7 +161,7 @@ else {
 
 					</div>
 					<div class="container">
-						<form class="form-horizontal" action="contactus.php" onsubmit="redirect()" method="POST">
+						<form class="form-horizontal" action="index.php" method="POST">
 							<div class="form-group">
 								<br><br>
 								<label class="col-md-1 control-label" for="name">Name:<span class="red">*</span></label>
@@ -180,7 +180,7 @@ else {
 								</div>
 								<br><br class="hidden-xs"><br class="hidden-xs">
 							</div>
-							<a onclick="redirect()"><input onclick="redirect()" type="submit" class="col-xs-12 col-md-2 btn btn-primary pull-right"></a>
+							<a><input type="submit" class="col-xs-12 col-md-2 btn btn-primary pull-right"></a>
 							<br><br><br>
 						</form>
 					</div>
