@@ -41,7 +41,7 @@ nav li{
 .regcol{
 	background-color: #fefefe;
 	box-shadow: solid 40px black;
-	height: 230px;
+	height: 200px;
 	padding: 1rem;
 	position: relative;
 
@@ -155,7 +155,7 @@ footer{
 		border-right: solid 2px rgba(0, 0, 0, 0.08);
 	}
 	.regcol{
-		height: 260px;
+		height: 220px;
 	}
 	.cabshareh1{
 		font-size: 45px;

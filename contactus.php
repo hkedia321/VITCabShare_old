@@ -40,6 +40,5 @@ if(!$mail->send())
 } 
 else 
 {
-	echo "Message has been sent successfully";
 	header("Location:http://vitcabshare.azurewebsites.net/thankyou.html");
 }
