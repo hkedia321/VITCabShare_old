@@ -8,6 +8,23 @@ body{
 	padding-bottom: 10rem;
 	
 }
+.border{
+	border: solid 1px red;
+}
+#dateth:hover{
+	cursor: pointer;
+	background-color: #235d8e;
+}
+#dateth{
+	background-color:#337ab7;
+	vertical-align: middle;
+	transition:all 0.3s ease;
+	padding: 0px 2.5rem;
+}
+th{
+	vertical-align: middle !important;
+}
+
 footer{
 	position: relative;
 	background-color: #fff;

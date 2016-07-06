@@ -28,7 +28,7 @@
 				<table class="table table-striped table-hover table-bordered" id="mytable">
 					<thead>
 						<tr>
-							<th id="dateth">Date</th>
+							<th title="click to sort datewise" id="dateth">Date</th>
 							<th>Time</th>
 							<th>Name</th>
 							<th>From</th>
@@ -206,17 +206,17 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/tsorter.min.js"></script>
 	<script>
-	// function init() {
-	// 	var sorter = tsorter.create('mytable');
-	// }
+	function init() {
+		var sorter = tsorter.create('mytable');
+	}
 
-	// window.onload = init;
-	// $(document).ready(function(){
-	// 	document.getElementById('dateth').click();
-	// });
-	// function clik(){
-	// 	document.getElementById('dateth').click();
-	// }
+	window.onload = init;
+	$(document).ready(function(){
+		document.getElementById('dateth').click();
+	});
+	function clik(){
+		document.getElementById('dateth').click();
+	}
 	
 	</script>
 </body>
