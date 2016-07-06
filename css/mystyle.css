@@ -138,6 +138,18 @@ footer{
 	padding-bottom: 2rem;
 	position: relative;
 }
+#navbarimg{
+	display: inline-block;
+	margin: 0px;
+	height: 200%;
+	margin-top: -8px;
+	width: 95%;
+}
+@media (max-width:350px){
+	#navbarimg{
+		width: 150px;
+	}
+}
 @media (min-width: 769px){
 	#reg{
 		border-right: solid 2px rgba(0, 0, 0, 0.08);
