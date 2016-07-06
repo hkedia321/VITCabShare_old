@@ -40,5 +40,5 @@ if(!$mail->send())
 } 
 else 
 {
-	header("Location:http://vitcabshare.azurewebsites.net/thankyou.html");
+	header("Location:thankyou.html");
 }
