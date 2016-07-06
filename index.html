@@ -16,9 +16,11 @@
 	<meta property="og:title"         content="VIT Cab Share" />
 	<meta property="og:description"   content="VIT Cab Share is an easy way to share your cab from Chennai or Bangaluru Airport to VIT Vellore. Built by VITians." />
 	<meta property="og:image"         content="images/taxi.png" />
-<script>
-	window.location.href = 'http://vitcabshare.azurewebsites.net/thankyou.html';
-</script>
+	<script>
+	function redirect(){
+		window.location.href = 'http://vitcabshare.azurewebsites.net/thankyou.html';
+	}
+	</script>
 
 </head>
 <body>
@@ -139,7 +141,7 @@
 							</div>
 							<br><br class="hidden-xs"><br class="hidden-xs">
 						</div>
-						<a onclick="redirect()"><input type="submit" class="col-xs-12 col-md-2 btn btn-primary pull-right"></a>
+						<a onclick="redirect()"><input onclick="redirect()" type="submit" class="col-xs-12 col-md-2 btn btn-primary pull-right"></a>
 						<br><br><br>
 					</form>
 				</div>
@@ -163,10 +165,6 @@
 			<script src="js/jquery.js"></script>
 			<script src="js/bootstrap.min.js"></script>	
 			<script src="js/myjs.js"></script>
-			<script type="text/javascript">
-			function redirect(){
-				window.location="http://www.google.com";
-			}
-			</script>
+			
 		</body>
 		</html>
