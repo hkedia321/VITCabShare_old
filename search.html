@@ -28,7 +28,7 @@
 				<table class="table table-striped table-hover table-bordered" id="mytable">
 					<thead>
 						<tr>
-							<th id="thdate">Date</th>
+							<th id="dateth">Date</th>
 							<th>Time</th>
 							<th>Name</th>
 							<th>From</th>
@@ -148,6 +148,15 @@
 							<td>abhinav.adtechs@gmail.com / 9087858900</td>
 							<td class="green">available</td>
 						</tr>
+						<tr>
+							<td>10-07-16</td>
+							<td>17:00</td>
+							<td>Vikrant</td>
+							<td>Chennai Airport</td>
+							<td>VIT Vellore</td>
+							<td>vikrantchill@gmail.com / 9158441997</td>
+							<td class="green">available</td>
+						</tr>
 						
 						
 						
@@ -166,12 +175,12 @@
 	<footer>
 
 		<div id="footer" class="container">
-			<span class="pullright"><div class="fb-share-button" style="display:inline-block;" data-href="https://www.facebook.com/vitcabshare/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fvitcabshare%2F&amp;src=sdkpreparse"><button type="button" class="btn btn-primary">Share on fb&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i></button></a></div></span>
+			<span class="pullright"><div class="fb-share-button" style="display:inline-block;" data-href="https://www.facebook.com/vitcabshare/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fvitcabshare%2F&amp;src=sdkpreparse"><button id="fbsharebut" type="button" class="btn btn-primary">Share on fb&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i></button></a></div></span>
 			<span class=""><span style="text-decoration:underline;"><a href="index.php">VIT Cab Share</a></span> - Cab Sharing made easy</span>
 			
 			<br>
 
-			<div class="opensource text-center" style="text-align:center;">This website is an open source initiative.<br> You can contribute and improve it.<br>see on <a href="https://github.com/hkedia321/VITCabShare" target="_blank">github</a></div>
+			<div class="opensource text-center" style="text-align:center;">This website is an open source initiative.<br> You can contribute and improve it.<br>see on <a href="https://github.com/hkedia321/VITCabShare" target="_blank" id="foogita">github</a></div>
 		</div>
 	</footer>
 	<script>
@@ -187,14 +196,16 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/tsorter.min.js"></script>
 	<script>
-	function init() {
-		var sorter = tsorter.create('mytable');
-	}
+	// function init() {
+	// 	var sorter = tsorter.create('mytable');
+	// }
 
-	window.onload = init;
-	$(document).ready(function(){
-		$('#thdate').click();
-	});
+	// window.onload = init;
+	// $(document).ready(function(){
+	// 	document.getElementById('dateth').click();
+	// });
+	// delay(5000);
+	// document.getElementById('dateth').click();
 	
 	</script>
 </body>
