@@ -1,11 +1,13 @@
 <?php
+if($_POST['name']){
+
 
 require_once "php/PHPMailerAutoload.php";
 
 $mail = new PHPMailer;
 
 //Enable SMTP debugging. 
-$mail->SMTPDebug = 3;                               
+$mail->SMTPDebug = 0;                               
 //Set PHPMailer to use SMTP.
 $mail->isSMTP();            
 //Set SMTP host name                          
@@ -46,6 +48,128 @@ if(!$mail->send())
 } 
 else 
 {
+	header('Location: thankyou.html');
+	exit();
 	echo "Message has been sent successfully";
-	header("Location:http://vitcabshare.azurewebsites.net/thankyou2.html");
+	echo 'Boolean';
 }
+
+}
+else {
+
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>VIT Cab Share-Register</title>
+	<meta charset="UTF-8">
+	
+	<meta name="keywords" content="VIT, Cab, Share, Sharing, Taxi, Vellore, Chennai, Airport, Bengaluru, Airport">
+	<meta name="description" content="VIT Cab Share is an easy way to share your cab from Chennai or Bengaluru Airport to VIT Vellore. Built by VITians.">
+	<meta name="author" content="Harshit Kedia, kediarocket@outlook.com">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/taxi.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+	<script type="text/javascript">
+	function redirect(){
+		window.location="http://www.google.com";
+	}
+	</script>
+</head>
+<body>
+	
+	<div id="registercon">
+		<div class="container">
+			<h1 class="cabsh1 text-center">VIT Cab Sharing</h1>
+			<h2 class="shareh2 text-center">Cab Sharing Made Easy</h2>
+			<a href="index.html"><button class="goback btn btn-primary" type="button">Go Back</button></a>
+
+			<div class="formdiv">
+				<h1 class="text-center">Register</h1>
+				<br>
+				<form action="register.php" method="POST" onsubmit="redirect()">
+					<div class="form-group">
+						<div class="row">
+							<label class="col-md-2 control-label" for="name">Name:<span class="red">&nbsp;*</span></label>
+							<div class="col-md-10">
+								<input type="text" required class="form-control" id="name" placeholder="Your name" name="name">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="row">
+							<label for="from" class="col-md-2 control-label">From:&nbsp;<span class="required">*</span></label>
+							<div class="col-md-4">
+								<input type="text" placeholder="select.." list="destlist1" class="form-control" id="from" style="margin-bottom:15px;" name="from" onfocus="checkpla()">
+								<datalist id="destlist1">
+									<option id="op11" value="Chennai Airport"></option>
+									<option id="op12" value="Bengalore Airport"></option>
+									<option id="op13" value="VIT Vellore"></option>
+								</datalist>
+							</div>
+							<label for="to" class="col-md-2 control-label">To:&nbsp;<span class="required">*</span></label>
+							<div class="col-md-4">
+								<input type="text" placeholder="select.." list="destlist2" class="form-control" id="to" style="margin-bottom:15px;" name="to" onfocus="checkpla()">
+								<datalist id="destlist2">
+									<option id="op21" value="Chennai Airport"></option>
+									<option id="op22" value="Bengalore Airport"></option>
+									<option id="op23" value="VIT Vellore"></option>
+								</datalist>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="row">
+							<label class="col-md-2 control-label" for="date">Date:<span class="red">&nbsp;*</span></label>
+							<div class="col-md-4">
+								<input type="date" required class="form-control" id="date" placeholder="" name="date">
+							</div>
+							<label class="col-md-2 control-label" for="name">Time:<span class="red">&nbsp;*</span></label>
+							<div class="col-md-4">
+								<input type="time" required class="form-control" id="time" name="time">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="row">
+							<label class="col-md-2 control-label" required for="email">Email:&nbsp;<span class="red">*</span></label>
+							<div class="col-md-4">
+								<input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" class="form-control" id="email" name="email" placeholder="Your Email">
+							</div>
+							<label class="col-md-2 control-label" for="phnno">Phone no:&nbsp;</label>
+							<div class="col-md-4">
+								<input type="number" pattern="[0-9]{10}" class="form-control" id="phnno" name="phnno" placeholder="Your Mobile no.(optional)">
+							</div>
+						</div>
+					</div>
+					<br>
+
+					<a onclick="redirect()"><input type="submit" class="col-xs-12 col-md-2 btn btn-primary pull-right"></a>
+				</form>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<footer>
+
+		<div id="footer" class="container">
+			<span class="pullright"><div class="fb-share-button" style="display:inline-block;" data-href="https://www.facebook.com/vitcabshare/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fvitcabshare%2F&amp;src=sdkpreparse"><button type="button" class="btn btn-primary">Share on fb&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i></button></a></div></span>
+			<span class=""><span style="text-decoration:underline;"><a href="index.html">VIT Cab Share</a></span> - Cab Sharing made easy</span>
+
+			<br>
+
+			<div class="opensource text-center" style="text-align:center;">This website is an open source initiative.<br> You can contribute and improve it.<br>see on <a href="https://github.com/hkedia321/VITCabShare" target="_blank">github</a></div>
+		</div>
+	</footer>
+
+</body>
+</html>
+
+<?php
+}
+?>
