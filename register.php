@@ -143,8 +143,8 @@ else {
 							</div>
 						</div>
 						<br>
-
-						<a><input type="submit" class="col-xs-12 col-md-2 btn btn-primary pull-right"></a>
+						<span class="pull-left"><a href="index.php#contactus">Contact Us</a> for any kind of support.
+						<a></span><input type="submit" class="col-xs-12 col-md-2 btn btn-primary pull-right"></a>
 					</form>
 				</div>
 			</div>
