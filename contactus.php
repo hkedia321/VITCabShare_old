@@ -40,5 +40,6 @@ if(!$mail->send())
 } 
 else 
 {
+	
 	header("Location:thankyou.html");
 }
