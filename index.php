@@ -71,7 +71,7 @@ else {
 		<meta property="og:type"          content="website" />
 		<meta property="og:title"         content="VIT Cab Share" />
 		<meta property="og:description"   content="VIT Cab Share is an easy way to share your cab from Chennai or Bengaluru Airport to VIT Vellore. Built by VITians." />
-		<meta property="og:image"         content="images/taxi.png" />
+		<meta property="og:image"         content="images/cover2.png" />
 
 	</head>
 	<body>
