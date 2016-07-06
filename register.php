@@ -87,7 +87,7 @@ else {
 				<div class="formdiv">
 					<h1 class="text-center">Register</h1>
 					<br>
-					<form action="register.php" method="POST" onsubmit="redirect()">
+					<form action="register.php" method="POST" name="registerform" onsubmit="return validate()">
 						<div class="form-group">
 							<div class="row">
 								<label class="col-md-2 control-label" for="name">Name:<span class="red">&nbsp;*</span></label>
@@ -171,6 +171,17 @@ else {
 		ga('send', 'pageview');
 
 		</script>
+		<script>
+		function validate() {
+			var x = document.forms["registerform"]["from"].value;
+			var y = document.forms["registerform"]["to"].value;
+			if (x == y) {
+				alert("Source and destination cannot be same!");
+				return false;
+			}
+		}
+		</script>
+
 	</body>
 	</html>
 
