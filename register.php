@@ -2,174 +2,183 @@
 if($_POST['name']){
 
 
-require_once "php/PHPMailerAutoload.php";
+	require_once "php/PHPMailerAutoload.php";
 
-$mail = new PHPMailer;
+	$mail = new PHPMailer;
 
 //Enable SMTP debugging. 
-$mail->SMTPDebug = 0;                               
+	$mail->SMTPDebug = 0;                               
 //Set PHPMailer to use SMTP.
-$mail->isSMTP();            
+	$mail->isSMTP();            
 //Set SMTP host name                          
-$mail->Host = "smtp.gmail.com";
+	$mail->Host = "smtp.gmail.com";
 //Set this to true if SMTP host requires authentication to send email
-$mail->SMTPAuth = true;                          
+	$mail->SMTPAuth = true;                          
 //Provide username and password     
-$mail->Username = "vitcabshare@gmail.com";                 
-$mail->Password = "harshitkediavitcabshare01";                           
+	$mail->Username = "vitcabshare@gmail.com";                 
+	$mail->Password = "harshitkediavitcabshare01";                           
 //If SMTP requires TLS encryption then set it
-$mail->SMTPSecure = "tls";                           
+	$mail->SMTPSecure = "tls";                           
 //Set TCP port to connect to 
-$mail->Port = 587;                                   
+	$mail->Port = 587;                                   
 
-$mail->From = "vitcabshare@gmail.com";
-$mail->FromName = "VIT Cab share";
+	$mail->From = "vitcabshare@gmail.com";
+	$mail->FromName = "VIT Cab share";
 
-$mail->addAddress("geek.harshitkedia@gmail.com", "Recepient Name");
+	$mail->addAddress("geek.harshitkedia@gmail.com", "Recepient Name");
 
-$mail->isHTML(true);
+	$mail->isHTML(true);
 
 
-$name = $_POST['name'];
-$from = $_POST['from'];
-$to = $_POST['to'];
-$date = $_POST['date'];
-$time = $_POST['time'];
-$email = $_POST['email'];
-$phnno = $_POST['phnno'];
-$mail->Subject = "Register $name";
+	$name = $_POST['name'];
+	$from = $_POST['from'];
+	$to = $_POST['to'];
+	$date = $_POST['date'];
+	$time = $_POST['time'];
+	$email = $_POST['email'];
+	$phnno = $_POST['phnno'];
+	$mail->Subject = "Register $name";
 
-$mail->Body = "$name \n $from \n $to \n $date \n $time \n $email \n $phnno \n";
-$mail->AltBody = "This is the plain text version of the email content";
+	$mail->Body = "$name \n $from \n $to \n $date \n $time \n $email \n $phnno \n";
+	$mail->AltBody = "This is the plain text version of the email content";
 
-if(!$mail->send()) 
-{
-	echo "Mailer Error: " . $mail->ErrorInfo;
-} 
-else 
-{
-	header('Location: thankyou.html');
-	exit();
-	echo "Message has been sent successfully";
-	echo 'Boolean';
-}
+	if(!$mail->send()) 
+	{
+		echo "Mailer Error: " . $mail->ErrorInfo;
+	} 
+	else 
+	{
+		header('Location: thankyou2.html');
+		exit();
+		echo "Message has been sent successfully";
+		echo 'Boolean';
+	}
 
 }
 else {
 
 
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>VIT Cab Share-Register</title>
-	<meta charset="UTF-8">
-	
-	<meta name="keywords" content="VIT, Cab, Share, Sharing, Taxi, Vellore, Chennai, Airport, Bengaluru, Airport">
-	<meta name="description" content="VIT Cab Share is an easy way to share your cab from Chennai or Bengaluru Airport to VIT Vellore. Built by VITians.">
-	<meta name="author" content="Harshit Kedia, kediarocket@outlook.com">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="images/taxi.png">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/register.css">
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>	
-	<script type="text/javascript">
-	function redirect(){
-		window.location="http://www.google.com";
-	}
-	</script>
-</head>
-<body>
-	
-	<div id="registercon">
-		<div class="container">
-			<h1 class="cabsh1 text-center">VIT Cab Sharing</h1>
-			<h2 class="shareh2 text-center">Cab Sharing Made Easy</h2>
-			<a href="index.html"><button class="goback btn btn-primary" type="button">Go Back</button></a>
+	?>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>VIT Cab Share-Register</title>
+		<meta charset="UTF-8">
+		
+		<meta name="keywords" content="VIT, Cab, Share, Sharing, Taxi, Vellore, Chennai, Airport, Bengaluru, Airport">
+		<meta name="description" content="VIT Cab Share is an easy way to share your cab from Chennai or Bengaluru Airport to VIT Vellore. Built by VITians.">
+		<meta name="author" content="Harshit Kedia, kediarocket@outlook.com">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="images/taxi.png">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/register.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>	
+		<script type="text/javascript">
+		function redirect(){
+			window.location="http://www.google.com";
+		}
+		</script>
+	</head>
+	<body>
+		
+		<div id="registercon">
+			<div class="container">
+				<h1 class="cabsh1 text-center">VIT Cab Sharing</h1>
+				<h2 class="shareh2 text-center">Cab Sharing Made Easy</h2>
+				<a href="index.php"><button class="goback btn btn-primary" type="button">Go Back</button></a>
 
-			<div class="formdiv">
-				<h1 class="text-center">Register</h1>
-				<br>
-				<form action="register.php" method="POST" onsubmit="redirect()">
-					<div class="form-group">
-						<div class="row">
-							<label class="col-md-2 control-label" for="name">Name:<span class="red">&nbsp;*</span></label>
-							<div class="col-md-10">
-								<input type="text" required class="form-control" id="name" placeholder="Your name" name="name">
-							</div>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="row">
-							<label for="from" class="col-md-2 control-label">From:&nbsp;<span class="required">*</span></label>
-							<div class="col-md-4">
-								<input type="text" placeholder="select.." list="destlist1" class="form-control" id="from" style="margin-bottom:15px;" name="from" onfocus="checkpla()">
-								<datalist id="destlist1">
-									<option id="op11" value="Chennai Airport"></option>
-									<option id="op12" value="Bengalore Airport"></option>
-									<option id="op13" value="VIT Vellore"></option>
-								</datalist>
-							</div>
-							<label for="to" class="col-md-2 control-label">To:&nbsp;<span class="required">*</span></label>
-							<div class="col-md-4">
-								<input type="text" placeholder="select.." list="destlist2" class="form-control" id="to" style="margin-bottom:15px;" name="to" onfocus="checkpla()">
-								<datalist id="destlist2">
-									<option id="op21" value="Chennai Airport"></option>
-									<option id="op22" value="Bengalore Airport"></option>
-									<option id="op23" value="VIT Vellore"></option>
-								</datalist>
-							</div>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="row">
-							<label class="col-md-2 control-label" for="date">Date:<span class="red">&nbsp;*</span></label>
-							<div class="col-md-4">
-								<input type="date" required class="form-control" id="date" placeholder="" name="date">
-							</div>
-							<label class="col-md-2 control-label" for="name">Time:<span class="red">&nbsp;*</span></label>
-							<div class="col-md-4">
-								<input type="time" required class="form-control" id="time" name="time">
-							</div>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="row">
-							<label class="col-md-2 control-label" required for="email">Email:&nbsp;<span class="red">*</span></label>
-							<div class="col-md-4">
-								<input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" class="form-control" id="email" name="email" placeholder="Your Email">
-							</div>
-							<label class="col-md-2 control-label" for="phnno">Phone no:&nbsp;</label>
-							<div class="col-md-4">
-								<input type="number" pattern="[0-9]{10}" class="form-control" id="phnno" name="phnno" placeholder="Your Mobile no.(optional)">
-							</div>
-						</div>
-					</div>
+				<div class="formdiv">
+					<h1 class="text-center">Register</h1>
 					<br>
+					<form action="register.php" method="POST" onsubmit="redirect()">
+						<div class="form-group">
+							<div class="row">
+								<label class="col-md-2 control-label" for="name">Name:<span class="red">&nbsp;*</span></label>
+								<div class="col-md-10">
+									<input type="text" required class="form-control" id="name" placeholder="Your name" name="name">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<label for="from" class="col-md-2 control-label">From:&nbsp;<span class="required">*</span></label>
+								<div class="col-md-4">
+									<input type="text" placeholder="select.." list="destlist1" class="form-control" id="from" style="margin-bottom:15px;" name="from" onfocus="checkpla()">
+									<datalist id="destlist1">
+										<option id="op11" value="Chennai Airport"></option>
+										<option id="op12" value="Bengalore Airport"></option>
+										<option id="op13" value="VIT Vellore"></option>
+									</datalist>
+								</div>
+								<label for="to" class="col-md-2 control-label">To:&nbsp;<span class="required">*</span></label>
+								<div class="col-md-4">
+									<input type="text" placeholder="select.." list="destlist2" class="form-control" id="to" style="margin-bottom:15px;" name="to" onfocus="checkpla()">
+									<datalist id="destlist2">
+										<option id="op21" value="Chennai Airport"></option>
+										<option id="op22" value="Bengalore Airport"></option>
+										<option id="op23" value="VIT Vellore"></option>
+									</datalist>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<label class="col-md-2 control-label" for="date">Date:<span class="red">&nbsp;*</span></label>
+								<div class="col-md-4">
+									<input type="date" required class="form-control" id="date" placeholder="" name="date">
+								</div>
+								<label class="col-md-2 control-label" for="name">Time:<span class="red">&nbsp;*</span></label>
+								<div class="col-md-4">
+									<input type="time" required class="form-control" id="time" name="time">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<label class="col-md-2 control-label" required for="email">Email:&nbsp;<span class="red">*</span></label>
+								<div class="col-md-4">
+									<input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" class="form-control" id="email" name="email" placeholder="Your Email">
+								</div>
+								<label class="col-md-2 control-label" for="phnno">Phone no:&nbsp;</label>
+								<div class="col-md-4">
+									<input type="number" pattern="[0-9]{10}" class="form-control" id="phnno" name="phnno" placeholder="Your Mobile no.(optional)">
+								</div>
+							</div>
+						</div>
+						<br>
 
-					<a onclick="redirect()"><input type="submit" class="col-xs-12 col-md-2 btn btn-primary pull-right"></a>
-				</form>
+						<a onclick="redirect()"><input type="submit" class="col-xs-12 col-md-2 btn btn-primary pull-right"></a>
+					</form>
+				</div>
 			</div>
 		</div>
-	</div>
-	<hr>
-	<footer>
+		<hr>
+		<footer>
 
-		<div id="footer" class="container">
-			<span class="pullright"><div class="fb-share-button" style="display:inline-block;" data-href="https://www.facebook.com/vitcabshare/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fvitcabshare%2F&amp;src=sdkpreparse"><button type="button" class="btn btn-primary">Share on fb&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i></button></a></div></span>
-			<span class=""><span style="text-decoration:underline;"><a href="index.html">VIT Cab Share</a></span> - Cab Sharing made easy</span>
+			<div id="footer" class="container">
+				<span class="pullright"><div class="fb-share-button" style="display:inline-block;" data-href="https://www.facebook.com/vitcabshare/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fvitcabshare%2F&amp;src=sdkpreparse"><button type="button" class="btn btn-primary">Share on fb&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i></button></a></div></span>
+				<span class=""><span style="text-decoration:underline;"><a href="index.php">VIT Cab Share</a></span> - Cab Sharing made easy</span>
 
-			<br>
+				<br>
 
-			<div class="opensource text-center" style="text-align:center;">This website is an open source initiative.<br> You can contribute and improve it.<br>see on <a href="https://github.com/hkedia321/VITCabShare" target="_blank">github</a></div>
-		</div>
-	</footer>
+				<div class="opensource text-center" style="text-align:center;">This website is an open source initiative.<br> You can contribute and improve it.<br>see on <a href="https://github.com/hkedia321/VITCabShare" target="_blank">github</a></div>
+			</div>
+		</footer>
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-</body>
-</html>
+		ga('create', 'UA-79774000-2', 'auto');
+		ga('send', 'pageview');
 
-<?php
+		</script>
+	</body>
+	</html>
+
+	<?php
 }
 ?>
