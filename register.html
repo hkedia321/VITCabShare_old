@@ -8,10 +8,17 @@
 	<meta name="description" content="VIT Cab Share is an easy way to share your cab from Chennai or Bengaluru Airport to VIT Vellore. Built by VITians.">
 	<meta name="author" content="Harshit Kedia, kediarocket@outlook.com">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="images/fab.png">
+	<link rel="icon" href="images/taxi.png">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/register.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+	<script type="text/javascript">
+	function redirect(){
+		window.location="http://www.google.com";
+	}
+	</script>
 </head>
 <body>
 	
@@ -24,7 +31,7 @@
 			<div class="formdiv">
 				<h1 class="text-center">Register</h1>
 				<br>
-				<form action="register.php" method="POST" onsubmit="thankyou2.html">
+				<form action="register.php" method="POST" onsubmit="redirect()">
 					<div class="form-group">
 						<div class="row">
 							<label class="col-md-2 control-label" for="name">Name:<span class="red">&nbsp;*</span></label>
@@ -81,7 +88,7 @@
 					</div>
 					<br>
 
-					<a href="thankyou2.html"><input type="submit" class="col-xs-12 col-md-2 btn btn-primary pull-right"></a>
+					<a onclick="redirect()"><input type="submit" class="col-xs-12 col-md-2 btn btn-primary pull-right"></a>
 				</form>
 			</div>
 		</div>
@@ -98,7 +105,6 @@
 			<div class="opensource text-center" style="text-align:center;">This website is an open source initiative.<br> You can contribute and improve it.<br>see on <a href="https://github.com/hkedia321/VITCabShare" target="_blank">github</a></div>
 		</div>
 	</footer>
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>	
+
 </body>
 </html>
