@@ -12,6 +12,21 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/search.css">
+	<script>
+	function sendMail(isForm){
+
+		isBody = "";
+		recipient = "vitcabshare@gmail.com";
+		isSubject = "Form Data";
+		isBody = "Name: " + isForm.personal.value +" --- ";
+		isBody += "Address: " + isForm.address.value +" --- ";
+		isBody += "City: " + isForm.city.value +" --- ";
+		isBody += "State: " + isForm.state.value +" --- ";
+		isBody += "Zip: " + isForm.zip.value;
+		document.forms.Send.action = "mailto:"+recipient+"?subject="+isSubject+"&body="+isBody+"&nbsp"
+
+	}
+	</script>
 </head>
 <body>
 
@@ -137,8 +152,17 @@
 							<td>VIT Vellore</td>
 							<td>arnavallen.aa@gmail.com / 9003725750</td>
 							<td class="green">available</td>
+							<!-- <td class="mailtd"><button class="mailbut btn btn-primary">Contact</button></td> -->
 						</tr>
-
+						<tr>
+							<td>09-07-16</td>
+							<td>19:29</td>
+							<td>Abhinav Das</td>
+							<td>Chennai Airport</td>
+							<td>VIT Vellore</td>
+							<td>abhinav.adtechs@gmail.com / 9087858900</td>
+							<td class="green">available</td>
+						</tr>
 						
 						
 						
@@ -149,6 +173,7 @@
 						
 					</tbody>
 				</table>
+
 			</div>
 		</div>
 	</div>
@@ -182,11 +207,7 @@
 		$("#mytable").tablesorter(); 
 	} 
 	); 
-	$(document).ready(function() 
-	{ 
-		$("#mytable").tablesorter( {sortList: [[0,0], [1,0]]} ); 
-	} 
-	); 
+	
 	</script>
 </body>
 </html>
