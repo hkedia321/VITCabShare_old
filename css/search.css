@@ -11,6 +11,12 @@ footer{
 	position: relative;
 	background-color: #fff;
 }
+.red{
+	color: red !important;
+}
+.green{
+	color: green !important;
+}
 .cabsh1{
 	text-decoration: underline;
 	font-size: 3rem;
