@@ -24,6 +24,7 @@
 			<h2 class="shareh2 text-center">Cab Sharing Made Easy</h2>
 			<a href="index.php"><button class="goback btn btn-primary" type="button">Go Back</button></a>
 			<h1 class="text-center">Search</h1>
+			<h4 class="text-center"><span id="badge" class="badge"><span id="badgespan"></span> registrations!</span></h4>
 			<div class="tablediv table-responsive" style="border:none;">
 				<div class="red">click date button to Sort date wise</div>
 				<table class="table table-striped table-hover table-bordered" id="mytable">
@@ -443,7 +444,8 @@
 	function clik(){
 		document.getElementById('dateth').click();
 	}
-	
+	var no=document.getElementsByTagName('tr');
+	document.getElementById('badgespan').innerHTML=no.length;
 	</script>
 </body>
 </html>

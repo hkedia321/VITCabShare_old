@@ -86,6 +86,7 @@ else {
 
 				<div class="formdiv">
 					<h1 class="text-center">Register</h1>
+					<h4 class="text-center"><span id="badge" class="badge"><span id="badgespan">39</span> registrations!</span></h4>
 					<br>
 					<form action="register.php" method="POST" name="registerform" onsubmit="return validate()">
 						<div class="form-group">
@@ -145,46 +146,48 @@ else {
 						<br>
 						<span class="col-sm-6"><a href="index.php#contactus">Contact Us</a> for any kind of support.
 							<a></span><input type="submit" class="col-xs-12 col-sm-6 col-md-2 btn btn-primary pull-right"></a>
-					</form>
+						</form>
+					</div>
 				</div>
 			</div>
-		</div>
-		<hr>
-		<footer>
+			<hr>
+			<footer>
 
-			<div id="footer" class="container">
-				<span class="pullright"><div class="fb-share-button" style="display:inline-block;" data-href="https://www.facebook.com/vitcabshare/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fvitcabshare%2F&amp;src=sdkpreparse"><button type="button" class="btn btn-primary">Share on fb&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i></button></a></div></span>
-				<span class=""><span style="text-decoration:underline;"><a href="index.php">VIT Cab Share</a></span> - Cab Sharing made easy</span>
+				<div id="footer" class="container">
+					<span class="pullright"><div class="fb-share-button" style="display:inline-block;" data-href="https://www.facebook.com/vitcabshare/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fvitcabshare%2F&amp;src=sdkpreparse"><button type="button" class="btn btn-primary">Share on fb&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i></button></a></div></span>
+					<span class=""><span style="text-decoration:underline;"><a href="index.php">VIT Cab Share</a></span> - Cab Sharing made easy</span>
 
-				<br>
+					<br>
 
-				<div class="opensource text-center" style="text-align:center;">This website is an open source initiative.<br> You can contribute and improve it.<br>see on <a href="https://github.com/hkedia321/VITCabShare" target="_blank">github</a></div>
-			</div>
-		</footer>
-		<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+					<div class="opensource text-center" style="text-align:center;">This website is an open source initiative.<br> You can contribute and improve it.<br>see on <a href="https://github.com/hkedia321/VITCabShare" target="_blank">github</a></div>
+				</div>
+			</footer>
+			<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-		ga('create', 'UA-79774000-2', 'auto');
-		ga('send', 'pageview');
+			ga('create', 'UA-79774000-2', 'auto');
+			ga('send', 'pageview');
 
-		</script>
-		<script>
-		function validate() {
-			var x = document.forms["registerform"]["from"].value;
-			var y = document.forms["registerform"]["to"].value;
-			if (x == y) {
-				alert("Source and destination cannot be same!");
-				return false;
+			</script>
+			<script>
+			function validate() {
+				var x = document.forms["registerform"]["from"].value;
+				var y = document.forms["registerform"]["to"].value;
+				if (x == y) {
+					alert("Source and destination cannot be same!");
+					return false;
+				}
 			}
-		}
-		</script>
+			// var no=document.getElementsByTagName('tr');
+			// document.getElementById('badgespan').innerHTML=no.length;
+			</script>
 
-	</body>
-	</html>
+		</body>
+		</html>
 
-	<?php
-}
-?>
+		<?php
+	}
+	?>

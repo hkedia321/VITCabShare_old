@@ -11,6 +11,10 @@ body{
 .border{
 	border: solid 1px red;
 }
+#badge{
+	font-size: 2rem !important;
+	background-color: #337ab7;
+}
 #dateth:hover{
 	cursor: pointer;
 	background-color: #235d8e;
