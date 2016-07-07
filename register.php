@@ -86,7 +86,7 @@ else {
 
 				<div class="formdiv">
 					<h1 class="text-center">Register</h1>
-					<h4 class="text-center"><span id="badge" class="badge"><span id="badgespan">39</span> registrations!</span></h4>
+					<h4 class="text-center"><span id="badge" class="badge"><span id="badgespan">40</span> registrations!</span></h4>
 					<br>
 					<form action="register.php" method="POST" name="registerform" onsubmit="return validate()">
 						<div class="form-group">
@@ -183,11 +183,21 @@ else {
 			}
 			// var no=document.getElementsByTagName('tr');
 			// document.getElementById('badgespan').innerHTML=no.length;
-			</script>
+			$('#badgespan').each(function () {
+				$(this).prop('Counter',0).animate({
+					Counter: $(this).text()
+				}, {
+					duration: 4000,
+					easing: 'swing',
+					step: function (now) {
+						$(this).text(Math.ceil(now));
+					}
+				});
+				</script>
 
-		</body>
-		</html>
+			</body>
+			</html>
 
-		<?php
-	}
-	?>
+			<?php
+		}
+		?>

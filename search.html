@@ -378,10 +378,19 @@
 						<tr>
 							<td>11-07-16</td>
 							<td>17:00</td>
-							<td>swarnima.sri2014@vit.ac.in</td>
+							<td>Swarnima Srivastava</td>
 							<td>Chennai Airport</td>
 							<td>VIT Vellore</td>
-							<td>vikrantchill@gmail.com / 9952604042</td>
+							<td>swarnima.sri2014@vit.ac.in / 9952604042</td>
+							<td class="green">available</td>
+						</tr>
+						<tr>
+							<td>08-07-16</td>
+							<td>03:15</td>
+							<td>Anshita</td>
+							<td>Chennai Airport</td>
+							<td>VIT Vellore</td>
+							<td>anshitapandey16@gmail.com</td>
 							<td class="green">available</td>
 						</tr>
 						<!--
@@ -446,6 +455,17 @@
 	}
 	var no=document.getElementsByTagName('tr');
 	document.getElementById('badgespan').innerHTML=no.length;
+	$('#badgespan').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
 	</script>
 </body>
 </html>
