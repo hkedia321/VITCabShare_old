@@ -39,7 +39,7 @@ if($_POST['name']){
 	$phnno = $_POST['phnno'];
 	$mail->Subject = "Register $name";
 
-	$mail->Body = "$name \n $from \n $to \n $date \n $time \n $email \n $phnno \n";
+	$mail->Body = "$date  \n $time  \n  $name \n $from \n $to \n  $email \n $phnno";
 	$mail->AltBody = "This is the plain text version of the email content";
 
 	if(!$mail->send()) 
@@ -86,7 +86,7 @@ else {
 
 				<div class="formdiv">
 					<h1 class="text-center">Register</h1>
-					<h4 class="text-center"><span id="badge" class="badge"><span id="badgespan">46</span> registrations!</span></h4>
+					<h4 class="text-center"><span id="badge" class="badge"><span id="badgespan">47</span> registrations!</span></h4>
 					<br>
 					<form action="register.php" method="POST" name="registerform" onsubmit="return validate()">
 						<div class="form-group">
