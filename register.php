@@ -86,7 +86,7 @@ else {
 
 				<div class="formdiv">
 					<h1 class="text-center">Register</h1>
-					<h4 class="text-center"><span id="badge" class="badge"><span id="badgespan">43</span> registrations!</span></h4>
+					<h4 class="text-center"><span id="badge" class="badge"><span id="badgespan">44</span> registrations!</span></h4>
 					<br>
 					<form action="register.php" method="POST" name="registerform" onsubmit="return validate()">
 						<div class="form-group">
@@ -174,7 +174,8 @@ else {
 						$(this).text(Math.ceil(now));
 					}
 				});
-				</script>
+			});
+			</script>
 				<script>
 				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
