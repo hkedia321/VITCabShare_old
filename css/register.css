@@ -54,4 +54,7 @@ input{
 		margin-right: auto;
 		text-align: center;
 	}
+	input[type="submit"]{
+		margin-top: 1rem;
+	}
 }
