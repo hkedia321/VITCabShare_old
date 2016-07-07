@@ -164,26 +164,6 @@ else {
 			</footer>
 			<script src="js/jquery.js"></script>
 			<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-79774000-2', 'auto');
-			ga('send', 'pageview');
-
-			</script>
-			<script>
-			function validate() {
-				var x = document.forms["registerform"]["from"].value;
-				var y = document.forms["registerform"]["to"].value;
-				if (x == y) {
-					alert("Source and destination cannot be same!");
-					return false;
-				}
-			}
-			// var no=document.getElementsByTagName('tr');
-			// document.getElementById('badgespan').innerHTML=no.length;
 			$('#badgespan').each(function () {
 				$(this).prop('Counter',0).animate({
 					Counter: $(this).text()
@@ -195,6 +175,27 @@ else {
 					}
 				});
 				</script>
+				<script>
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+				ga('create', 'UA-79774000-2', 'auto');
+				ga('send', 'pageview');
+
+				</script>
+				<script>
+				function validate() {
+					var x = document.forms["registerform"]["from"].value;
+					var y = document.forms["registerform"]["to"].value;
+					if (x == y) {
+						alert("Source and destination cannot be same!");
+						return false;
+					}
+				}
+				</script>
+
 
 			</body>
 			</html>
