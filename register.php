@@ -80,13 +80,13 @@ else {
 		
 		<div id="registercon">
 			<div class="container">
-				<h1 class="cabsh1 text-center">VIT Cab Sharing</h1>
+				<h1 class="cabsh1 text-center">VIT Cab Share</h1>
 				<h2 class="shareh2 text-center">Cab Sharing Made Easy</h2>
 				<a href="index.php"><button class="goback btn btn-primary" type="button">Go Back</button></a>
 
 				<div class="formdiv">
 					<h1 class="text-center">Register</h1>
-					<h4 class="text-center"><span id="badge" class="badge"><span id="badgespan">47</span> registrations!</span></h4>
+					<h4 class="text-center"><span id="badge" class="badge"><span id="badgespan">53</span> registrations!</span></h4>
 					<br>
 					<form action="register.php" method="POST" name="registerform" onsubmit="return validate()">
 						<div class="form-group">

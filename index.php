@@ -201,7 +201,7 @@ Register your journey details and Search for co passangers!
 			<span class="pullright">
 				<div class="fb-share-button" style="display:inline-block;" data-href="https://www.facebook.com/vitcabshare/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fvitcabshare%2F&amp;src=sdkpreparse"><button type="button" class="btn btn-primary">Share on fb&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i></button></a>
 				</div></span>
-				<span class=""><span style="text-decoration:underline;"><a href="index.html">VIT Cab Share</a></span> - Cab Sharing made easy</span>
+				<span class=""><span style="text-decoration:underline;"><a href="index.php">VIT Cab Share</a></span> - Cab Sharing made easy</span>
 
 				<br>
 
