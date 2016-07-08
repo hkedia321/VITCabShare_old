@@ -64,14 +64,22 @@ else {
 		<meta name="author" content="Harshit Kedia, kediarocket@outlook.com">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" href="images/taxi.png">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<!--Bootstrap CND-->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqmds1yVqOtnepnHVP9aJ7md" crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/mystyle.css">
 		<meta property="og:url"           content="http://vitcabshare.azurewebsites.net/" />
 		<meta property="og:type"          content="website" />
 		<meta property="og:title"         content="VIT Cab Share" />
 		<meta property="og:description"   content="VIT Cab Share is an easy way to share your cab from Chennai or Bengaluru Airport to VIT Vellore. Built by VITians." />
-		<meta property="og:image"         content="images/cover2.png" />
+		<meta property="og:image"         content="https://github.com/hkedia321/VITCabShare/blob/master/images/taxi.png" />
 
 	</head>
 	<body>
@@ -209,7 +217,6 @@ Register your journey details and Search for co passangers!
 			</div>
 		</footer>
 		<script src="js/jquery.js"></script>
-		<script src="js/bootstrap.min.js"></script>	
 		<script src="js/myjs.js"></script>
 		<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
