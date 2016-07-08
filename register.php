@@ -82,7 +82,7 @@ else {
 		
 		<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/register.css">
-		<meta property="og:image"         content="https://github.com/hkedia321/VITCabShare/blob/master/images/taxi.png" />
+		<meta property="og:image"         content="https://raw.githubusercontent.com/hkedia321/VITCabShare/master/images/taxi.png" />
 
 		<script src="js/jquery.js"></script>
 	</head>
