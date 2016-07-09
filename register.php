@@ -96,7 +96,7 @@ else {
 
 				<div class="formdiv">
 					<h1 class="text-center">Register</h1>
-					<h4 class="text-center"><span id="badge" class="badge"><span id="badgespan">64</span> registrations!</span></h4>
+					<h4 class="text-center"><span id="badge" class="badge"><span id="badgespan">71</span> registrations!</span></h4>
 					<br>
 					<form action="register.php" method="POST" name="registerform" onsubmit="return validate()">
 						<div class="form-group">
